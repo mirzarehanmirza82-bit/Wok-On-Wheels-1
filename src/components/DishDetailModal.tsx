@@ -48,6 +48,10 @@ export const DishDetailModal: React.FC<DishDetailModalProps> = ({
             alt={dish.name}
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0e1017] via-transparent to-black/30" />
           

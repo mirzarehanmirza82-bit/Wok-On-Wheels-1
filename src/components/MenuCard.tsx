@@ -47,6 +47,10 @@ export const MenuCard: React.FC<MenuCardProps> = ({
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#11131a] via-transparent to-transparent opacity-80" />
 

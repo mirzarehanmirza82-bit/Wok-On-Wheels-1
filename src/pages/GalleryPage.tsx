@@ -64,6 +64,10 @@ export const GalleryPage: React.FC = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+                }}
               />
             </div>
 

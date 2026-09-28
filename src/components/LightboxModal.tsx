@@ -34,6 +34,10 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           alt={title || 'Restaurant Gallery Photo'}
           className="max-h-[75vh] w-auto max-w-full rounded-2xl object-contain shadow-2xl border border-white/10"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+          }}
         />
         {(title || category) && (
           <div className="mt-4 text-center">

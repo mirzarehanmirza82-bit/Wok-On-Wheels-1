@@ -223,6 +223,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           alt={item.dish.name}
                           className="w-12 h-12 rounded-lg object-cover bg-slate-800 shrink-0" 
                           referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+                          }}
                         />
                         <div className="min-w-0">
                           <p className="text-sm font-semibold text-white truncate">

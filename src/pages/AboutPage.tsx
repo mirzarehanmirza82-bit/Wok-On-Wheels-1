@@ -31,6 +31,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             alt="Wok On Wheels Signature Food"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+            }}
           />
         </div>
 

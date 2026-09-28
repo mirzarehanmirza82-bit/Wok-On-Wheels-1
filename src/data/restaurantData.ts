@@ -1,5 +1,23 @@
 import { MenuItem } from '../types/restaurant';
 
+// Direct ES Module image imports so Vite bundles and hashes them into production dist/
+import imgHeroNoodles from '../assets/images/hero_wok_noodles_1790402210043.jpg';
+import imgManchurianBowl from '../assets/images/dish_manchurian_gravy_1790403095018.jpg';
+import imgCrispyBeefBowl from '../assets/images/dish_crispy_beef_bowl_1790403032080.jpg';
+import imgFriedCrackerNoodles from '../assets/images/dish_fried_cracker_noodles_1790403107445.jpg';
+import imgChiliDumplings from '../assets/images/menu_chili_dumplings_1790402231737.jpg';
+import imgSteamedDumplings from '../assets/images/dish_steamed_dumplings_1790403016575.jpg';
+import imgHoneySesameDumplings from '../assets/images/dish_sesame_dumplings_1790403055774.jpg';
+import imgSpicyKoreanWings from '../assets/images/menu_korean_wings_1790402220684.jpg';
+import imgDynamiteWings from '../assets/images/dish_dynamite_wings_1790403004541.jpg';
+import imgHoneyWings from '../assets/images/dish_honey_wings_1790403044105.jpg';
+import imgMintMargarita from '../assets/images/drink_mint_margarita_1790402966401.jpg';
+import imgStrawberryMargarita from '../assets/images/drink_strawberry_margarita_1790402979401.jpg';
+import imgBlueberryBlossom from '../assets/images/drink_blueberry_blossom_1790402992867.jpg';
+import imgFreshLemonade from '../assets/images/drink_fresh_lemonade_1790403069096.jpg';
+import imgCannedDrinks from '../assets/images/drink_chilled_cans_1790403082968.jpg';
+import imgCraftDrinksGeneral from '../assets/images/menu_craft_drinks_1790402242996.jpg';
+
 export const RESTAURANT_INFO = {
   name: 'Wok On Wheels',
   tagline: 'Korean & Chinese food',
@@ -21,29 +39,29 @@ export const RESTAURANT_INFO = {
 // High-resolution dish and drink specific photography
 export const ASSETS = {
   // Noodles & Bowls
-  heroNoodles: '/src/assets/images/hero_wok_noodles_1790402210043.jpg',
-  noodles: '/src/assets/images/hero_wok_noodles_1790402210043.jpg',
-  manchurianBowl: '/src/assets/images/dish_manchurian_gravy_1790403095018.jpg',
-  crispyBeefBowl: '/src/assets/images/dish_crispy_beef_bowl_1790403032080.jpg',
-  friedCrackerNoodles: '/src/assets/images/dish_fried_cracker_noodles_1790403107445.jpg',
+  heroNoodles: imgHeroNoodles,
+  noodles: imgHeroNoodles,
+  manchurianBowl: imgManchurianBowl,
+  crispyBeefBowl: imgCrispyBeefBowl,
+  friedCrackerNoodles: imgFriedCrackerNoodles,
 
   // Dumplings
-  chiliDumplings: '/src/assets/images/menu_chili_dumplings_1790402231737.jpg',
-  steamedDumplings: '/src/assets/images/dish_steamed_dumplings_1790403016575.jpg',
-  honeySesameDumplings: '/src/assets/images/dish_sesame_dumplings_1790403055774.jpg',
+  chiliDumplings: imgChiliDumplings,
+  steamedDumplings: imgSteamedDumplings,
+  honeySesameDumplings: imgHoneySesameDumplings,
 
   // Wings
-  spicyKoreanWings: '/src/assets/images/menu_korean_wings_1790402220684.jpg',
-  dynamiteWings: '/src/assets/images/dish_dynamite_wings_1790403004541.jpg',
-  honeyWings: '/src/assets/images/dish_honey_wings_1790403044105.jpg',
+  spicyKoreanWings: imgSpicyKoreanWings,
+  dynamiteWings: imgDynamiteWings,
+  honeyWings: imgHoneyWings,
 
   // Drinks & Margaritas
-  mintMargarita: '/src/assets/images/drink_mint_margarita_1790402966401.jpg',
-  strawberryMargarita: '/src/assets/images/drink_strawberry_margarita_1790402979401.jpg',
-  blueberryBlossom: '/src/assets/images/drink_blueberry_blossom_1790402992867.jpg',
-  freshLemonade: '/src/assets/images/drink_fresh_lemonade_1790403069096.jpg',
-  cannedDrinks: '/src/assets/images/drink_chilled_cans_1790403082968.jpg',
-  craftDrinksGeneral: '/src/assets/images/menu_craft_drinks_1790402242996.jpg'
+  mintMargarita: imgMintMargarita,
+  strawberryMargarita: imgStrawberryMargarita,
+  blueberryBlossom: imgBlueberryBlossom,
+  freshLemonade: imgFreshLemonade,
+  cannedDrinks: imgCannedDrinks,
+  craftDrinksGeneral: imgCraftDrinksGeneral
 };
 
 export const MENU_CATEGORIES = [

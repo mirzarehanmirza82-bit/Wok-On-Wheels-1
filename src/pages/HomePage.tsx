@@ -116,6 +116,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                     alt="Wok On Wheels Stir Fried Bowl"
                     className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = '/assets/images/hero_wok_noodles_1790402210043.jpg';
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0e1017] via-transparent to-transparent opacity-80" />
 
@@ -310,6 +314,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                 alt="Spicy Korean Wings"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/assets/images/menu_korean_wings_1790402220684.jpg';
+                }}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[4/3] mt-6">
@@ -318,6 +326,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                 alt="Wok Chili Dumplings"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/assets/images/menu_chili_dumplings_1790402231737.jpg';
+                }}
               />
             </div>
           </div>
