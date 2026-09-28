@@ -1,0 +1,6 @@
+{
+  "name": "Wok On Wheels | Korean & Chinese Restaurant Multan",
+  "description": "Premium Korean & Chinese style restaurant in Model Town, Multan. Order savory dumplings, wok noodles, wings, and mocktails with direct WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
